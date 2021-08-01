@@ -11,7 +11,7 @@ export default function Home() {
       <div className="my-8 lg:my-12">
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">CENNIK</p>
       </div>
-      <div className="container mx-auto">
+      <div className="container mx-auto mb-20">
         <div className="flex flex-row">
           <div className="hidden lg:block w-1/6"></div>
           <div className="flex-col w-full px-4 md:px-4">

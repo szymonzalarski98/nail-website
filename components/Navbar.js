@@ -31,5 +31,5 @@ export const Navbar = () => {
         }
       </Link>
     </nav>
-  )
+  );
 };

@@ -30,13 +30,13 @@ export default function Home() {
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">OFERTA</p>
       </div>
       <div className="container mx-auto px-8">
-        <p className="indent">Nazywam się Wiktoria Grzywa, jestem kosmetologiem i zajmuję się stylizacją paznokci. W skład mojej oferty wchodzi manicure hybrydowy, żelowy na naturalnej płytce, przedłuanie paznokci na formie, uzupełnianie żelu oraz odnowa żelu po czterech tygodniach. Ponadto oferuję pedicure hybrydowy, pedicure hybrydowy SPA oraz inne usługi. Zapraszam do skorzystania z moich usług, wszystkie wymienione są w <a className="underline font-bold"><Link href="/cennik">cenniku</Link></a>.</p>
+        <p style={{ textIndent: "1rem" }}>Nazywam się Wiktoria Grzywa, jestem kosmetologiem i zajmuję się stylizacją paznokci. W skład mojej oferty wchodzi manicure hybrydowy, żelowy na naturalnej płytce, przedłuanie paznokci na formie, uzupełnianie żelu oraz odnowa żelu po czterech tygodniach. Ponadto oferuję pedicure hybrydowy, pedicure hybrydowy SPA oraz inne usługi. Zapraszam do skorzystania z moich usług, wszystkie wymienione są w <a className="underline font-bold"><Link href="/cennik">cenniku</Link></a>.</p>
       </div>
       <div className="my-8 lg:my-12">
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">UMÓW SIĘ NA WIZYTĘ</p>
       </div>
-      <div className="container mx-auto px-8">
-        <p>Wizytę można zarezerwować za pośrednictwem rozmowy telefonicznej lub SMS, kontaktu mailowego, wiadomości na Instagramie lub Messengerze. Więcej informacji znajdziesz w zakładce <a className="underline font-bold"><Link href="/kontakt">kontakt</Link></a>.</p>
+      <div className="container mx-auto px-8 mb-20">
+        <p style={{ textIndent: "1rem" }}>Wizytę można zarezerwować za pośrednictwem rozmowy telefonicznej lub SMS, kontaktu mailowego, wiadomości na Instagramie lub Messengerze. Więcej informacji znajdziesz w zakładce <a className="underline font-bold"><Link href="/kontakt">kontakt</Link></a>.</p>
       </div>
     </>
   )
