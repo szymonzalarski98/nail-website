@@ -1,5 +1,7 @@
 export const Footer = () => (
-  <div className="container">
-    Elo
-  </div>
+  // <div className="container absolute bottom-0">
+  //   Elo
+  // </div>
+  <>
+  </>
 );

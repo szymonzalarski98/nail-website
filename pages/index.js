@@ -1,31 +1,43 @@
 import Head from "next/head";
-import { InfoCard } from "../components/InfoCard";
-import { Slider } from "../components/Slider";
+import { Header } from "../components/Header";
+import { Photos } from "../components/Photos";
+import Link from "next/link";
+
+const style = {
+  backgroundImage: "url(" + "https://1bolu849lji0aq4e82lakei1-wpengine.netdna-ssl.com/wp-content/uploads/sites/3/2021/04/Lounge-01_lg-scaled-aspect-ratio-16-9-scaled.jpg" + ")",
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+};
 
 export default function Home() {
   return (
     <>
-     <Head>
-        <title>Wiktoria Grzywa</title>
-        <link rel='icon' href='/favicon.ico' />
-     </Head>
-     <div className="container mx-auto mb-10">
-      <InfoCard
-        imageUri="https://scontent-frt3-2.xx.fbcdn.net/v/t1.6435-9/81441129_2607828932638457_2187188000721469440_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=jdyX_tXAzwMAX87tAnL&_nc_ht=scontent-frt3-2.xx&oh=64d668de72a65012647bea685379ed34&oe=6128E207"
-        text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-      />
-      <div className="mt-10" />
-      <InfoCard
-        imageUri="https://d375139ucebi94.cloudfront.net/pl/21064/e512298e024146f489e19d72c69746c8-Salon-Kosmetyczny-Marta-Ramza-biz-photo.JPEG"
-        text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-      />
-      <Slider />
-      {/* <div className="container flex flex-wrap justify-between items-start">
-        {[1,2,3,4,5,6,7,8].map(item => (
-          <img className="max-w-full lg:max-w-lg xl:max-w-sm" key={item} src="https://d375139ucebi94.cloudfront.net/pl/21064/e512298e024146f489e19d72c69746c8-Salon-Kosmetyczny-Marta-Ramza-biz-photo.JPEG" />
-        ))}
-      </div> */}
-    </div>
-   </>
+      <Head>
+          <title>Wiktoria Grzywa</title>
+          <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <div className="object-fill" style={{ height: "50vh" }}>
+        <div className="h-full w-full flex justify-center items-center" style={style}>
+          <Header />
+        </div>
+      </div>
+      <div className="my-8 lg:my-12">
+        <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">MOJE PRACE</p>
+      </div>
+      <Photos />
+      <div className="my-8 lg:my-12">
+        <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">OFERTA</p>
+      </div>
+      <div className="container mx-auto px-8">
+        <p className="indent">Nazywam się Wiktoria Grzywa, jestem kosmetologiem i zajmuję się stylizacją paznokci. W skład mojej oferty wchodzi manicure hybrydowy, żelowy na naturalnej płytce, przedłuanie paznokci na formie, uzupełnianie żelu oraz odnowa żelu po czterech tygodniach. Ponadto oferuję pedicure hybrydowy, pedicure hybrydowy SPA oraz inne usługi. Zapraszam do skorzystania z moich usług, wszystkie wymienione są w <a className="underline font-bold"><Link href="/cennik">cenniku</Link></a>.</p>
+      </div>
+      <div className="my-8 lg:my-12">
+        <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">UMÓW SIĘ NA WIZYTĘ</p>
+      </div>
+      <div className="container mx-auto px-8">
+        <p>Wizytę można zarezerwować za pośrednictwem rozmowy telefonicznej lub SMS, kontaktu mailowego, wiadomości na Instagramie lub Messengerze. Więcej informacji znajdziesz w zakładce <a className="underline font-bold"><Link href="/kontakt">kontakt</Link></a>.</p>
+      </div>
+    </>
   )
 }
