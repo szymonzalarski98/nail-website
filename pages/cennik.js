@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Row } from "../components/Row";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
@@ -8,6 +9,33 @@ export default function Home() {
         <title>Wiktoria Grzywa - Cennik</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <NextSeo
+        title="Wiktoria Grzywa Stylizacja Paznokci - cennik"
+        description="Nazywam się Wiktoria Grzywa, jestem kosmetologiem i zajmuję się stylizacją paznokci. Na tej podstronie znajduje się cennik moich usług."
+        canonical="https://www.wiktoriagrzywa.pl/"
+        openGraph={{
+          url: "https://www.wiktoriagrzywa.pl/",
+          title: "Wiktoria Grzywa Stylizacja Paznokci",
+          description: "Nazywam się Wiktoria Grzywa, jestem kosmetologiem i zajmuję się stylizacją paznokci.",
+          images: [
+            {
+              url: "https://firebasestorage.googleapis.com/v0/b/nail-website-d8fc6.appspot.com/o/photo6.png?alt=media&token=2c1eaec7-0094-4636-bb43-ddb910fd64ca",
+              width: 800,
+              height: 600,
+              alt: "Wiktoria Grzywa - stylizacja paznokci",
+            },
+            {
+              url: "https://firebasestorage.googleapis.com/v0/b/nail-website-d8fc6.appspot.com/o/photo6.png?alt=media&token=2c1eaec7-0094-4636-bb43-ddb910fd64ca",
+              width: 900,
+              height: 800,
+              alt: "Wiktoria Grzywa - stylizacja paznokci",
+            },
+            { url: "https://firebasestorage.googleapis.com/v0/b/nail-website-d8fc6.appspot.com/o/photo1.png?alt=media&token=57373a3e-cafa-4b21-a9cf-f98aa1037b6a" },
+            { url: "https://firebasestorage.googleapis.com/v0/b/nail-website-d8fc6.appspot.com/o/photo4.jpeg?alt=media&token=ad978c16-8979-4c00-b65b-219f52ec4eb3" },
+          ],
+          site_name: "Wiktoria Grzywa - stylizacja paznokci",
+        }}
+      />
       <div className="my-8 lg:my-12">
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">CENNIK</p>
       </div>
