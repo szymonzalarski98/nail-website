@@ -55,6 +55,7 @@ export default function Home() {
       />
       <div className="my-8 lg:my-12">
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">CENNIK</p>
+        <p className="text-center font-sans text-md font-extralight">Na pierwszą wizytę przysługuje rabat 20%</p>
       </div>
       <div className="container mx-auto mb-20">
         <div className="flex flex-row">
