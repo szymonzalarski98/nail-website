@@ -4,6 +4,7 @@ import { Photos } from "../components/Photos";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
 import { Opinions } from "../components/Opinions";
+import { AboutMe } from "../components/AboutMe";
 
 const style = {
   backgroundImage: "url(" + "https://firebasestorage.googleapis.com/v0/b/wgrzywa-33d36.appspot.com/o/website_background.jpeg?alt=media&token=117efb68-8472-4dc1-a7ef-f3c15bc74bd9" + ")",
@@ -72,16 +73,14 @@ export default function Home() {
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">MOJE PRACE</p>
       </div>
       <Photos />
-      <div className="my-8 lg:my-12">
-        <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">OFERTA</p>
+      <div className="lg:my-12">
+        <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">O MNIE</p>
       </div>
-      <div className="container mx-auto px-8 mb-20">
-        <p className="text-justify" style={{ textIndent: "1rem" }}>Nazywam się Wiktoria Grzywa, jestem kosmetologiem i zajmuję się stylizacją paznokci. W skład mojej oferty wchodzi manicure hybrydowy, żelowy na naturalnej płytce, przedłużanie paznokci na formie, uzupełnianie żelu oraz odnowa żelu po czterech tygodniach. Ponadto oferuję pedicure hybrydowy, pedicure hybrydowy SPA oraz inne usługi. Zapraszam do skorzystania z moich usług, wszystkie wymienione są w <a className="underline font-bold"><Link href="/cennik">cenniku</Link></a>.</p>
-      </div>
+      <AboutMe />
       <div className="my-8 lg:my-12">
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">UMÓW SIĘ NA WIZYTĘ</p>
       </div>
-      <div className="container mx-auto px-8 mb-20">
+      <div className="container mx-auto px-8">
         <p className="text-justify" style={{ textIndent: "1rem" }}>Wizytę można zarezerwować za pośrednictwem rozmowy telefonicznej lub SMS, kontaktu mailowego, wiadomości na Instagramie lub Messengerze. Więcej informacji znajdziesz w zakładce <a className="underline font-bold"><Link href="/kontakt">kontakt</Link></a>.</p>
         <p className="text-justify font-bold" style={{ textIndent: "1rem" }}>Na pierwszą wizytę przysługuje rabat 20%!</p>
       </div>
