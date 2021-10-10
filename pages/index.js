@@ -69,14 +69,14 @@ export default function Home() {
           <Header />
         </div>
       </div>
-      <div className="my-8 lg:my-12">
-        <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">MOJE PRACE</p>
-      </div>
-      <Photos />
       <div className="lg:my-12">
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">O MNIE</p>
       </div>
       <AboutMe />
+      <div className="my-8 lg:my-12">
+        <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">MOJE PRACE</p>
+      </div>
+      <Photos />
       <div className="my-8 lg:my-12">
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">UMÓW SIĘ NA WIZYTĘ</p>
       </div>

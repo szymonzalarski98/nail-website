@@ -6,6 +6,8 @@ const opinionsContent = [
   "Bardzo polecam, śliczne paznokcie i przemiła stylistka!",
   "Polecam!  Pieknee paznokcie 💅🤩",
   "Polecam serdecznie, piękne paznokcie i świetna stylistka.",
+  "Mega dokładnie zrobione paznokcie, bardzo trwałe i co się rzadko zdarza dokładnie takie jak chciałam.",
+  "Bardzo uprzejma osoba, a co najważniejsze, świetnie wykonuje swoją pracę.",
 ];
 
 export const Opinions = () => {
@@ -20,6 +22,8 @@ export const Opinions = () => {
         <Opinion description={opinionsContent[2]} name="Wiktoria" />
         <Opinion description={opinionsContent[3]} name="Emilia" />
         <Opinion description={opinionsContent[4]} name="Matylda" />
+        <Opinion description={opinionsContent[5]} name="Aneta" />
+        <Opinion description={opinionsContent[6]} name="Lucyna" />
       </div>
     </>
   );
