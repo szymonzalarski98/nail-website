@@ -69,7 +69,7 @@ export default function Home() {
           <Header />
         </div>
       </div>
-      <div className="lg:my-12">
+      <div className="mt-8 lg:my-12">
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">O MNIE</p>
       </div>
       <AboutMe />
