@@ -8,6 +8,8 @@ const opinionsContent = [
   "Polecam serdecznie, piękne paznokcie i świetna stylistka.",
   "Mega dokładnie zrobione paznokcie, bardzo trwałe i co się rzadko zdarza dokładnie takie jak chciałam.",
   "Bardzo uprzejma osoba, a co najważniejsze, świetnie wykonuje swoją pracę.",
+  "Polecam w 100 % profesjonalizm !!! Paznokcie przepiękne i co najważniejsze super się trzymają😀 ❤️",
+  "Bardzo serdecznie polecam. Miła obsługa. Czyściutki salonik. Perfekcyjne wykonanie z bardzo dużą precyzją, starannością i dbałością o każdy najmniejszy szczegół. Polecam."
 ];
 
 export const Opinions = () => {
@@ -24,6 +26,8 @@ export const Opinions = () => {
         <Opinion description={opinionsContent[4]} name="Matylda" />
         <Opinion description={opinionsContent[5]} name="Aneta" />
         <Opinion description={opinionsContent[6]} name="Lucyna" />
+        <Opinion description={opinionsContent[7]} name="Agata" />
+        <Opinion description={opinionsContent[8]} name="Barbara" />
       </div>
     </>
   );

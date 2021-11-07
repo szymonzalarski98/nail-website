@@ -70,7 +70,7 @@ export default function Home() {
             <Row name="Usunięcie stylizacji po innej stylistce" price="20" />
             <Row name="Manicure klasyczny bez malowania	" price="30" />
             <Row name="Pedicure hybrydowy	" price="70" />
-            <Row name="Pedicure hybrydowy SPA	" price="80" />
+            <Row name="Pedicure hybrydowy SPA	" price="90" />
           </div>
           <div className="hidden lg:block w-1/6"></div>
         </div>

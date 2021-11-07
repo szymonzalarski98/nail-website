@@ -7,7 +7,7 @@ import { Opinions } from "../components/Opinions";
 import { AboutMe } from "../components/AboutMe";
 
 const style = {
-  backgroundImage: "url(" + "https://firebasestorage.googleapis.com/v0/b/wgrzywa-33d36.appspot.com/o/website_background.jpeg?alt=media&token=117efb68-8472-4dc1-a7ef-f3c15bc74bd9" + ")",
+  backgroundImage: "url(" + "https://firebasestorage.googleapis.com/v0/b/wgrzywa-33d36.appspot.com/o/wgrzywa_web_background_minified.jpeg?alt=media&token=d34b5365-a974-4805-b40a-d84ba75d96b0" + ")",
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat'
@@ -64,7 +64,7 @@ export default function Home() {
             site_name: "Wiktoria Grzywa - stylizacja paznokci",
         }}
       />
-      <div className="object-fill" style={{ height: "50vh" }}>
+      <div className="object-fill" style={{ height: "calc(100vh - 48px)" }}>
         <div className="h-full w-full flex justify-center items-center" style={style}>
           <Header />
         </div>
