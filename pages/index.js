@@ -82,7 +82,7 @@ export default function Home() {
       </div>
       <div className="container mx-auto px-8">
         <p className="text-justify" style={{ textIndent: "1rem" }}>Wizytę można zarezerwować za pośrednictwem rozmowy telefonicznej lub SMS, kontaktu mailowego, wiadomości na Instagramie lub Messengerze. Więcej informacji znajdziesz w zakładce <a className="underline font-bold"><Link href="/kontakt">kontakt</Link></a>.</p>
-        <p className="text-justify font-bold" style={{ textIndent: "1rem" }}>Na pierwszą wizytę przysługuje rabat 20%!</p>
+        <p className="text-justify font-bold" style={{ textIndent: "1rem" }}>Na pierwszą wizytę przysługuje rabat 10%!</p>
       </div>
       <Opinions />
     </>
