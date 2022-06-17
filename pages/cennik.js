@@ -62,9 +62,6 @@ export default function Home() {
         <p className="text-center font-sans text-2xl md:text-3xl lg:text-4xl font-extralight">
           CENNIK
         </p>
-        <p className="text-center font-sans text-md font-extralight">
-          Na pierwszą wizytę przysługuje rabat 10%
-        </p>
       </div>
       <div className="container mx-auto mb-20">
         <div className="flex flex-row">
