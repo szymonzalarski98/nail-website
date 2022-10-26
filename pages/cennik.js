@@ -1,6 +1,48 @@
 import Head from "next/head";
-import { Row } from "../components/Row";
 import { NextSeo } from "next-seo";
+
+const services = [
+  {
+    name: "Manicure hybrydowy",
+    price: 70,
+  },
+  {
+    name: "Manicure żelowy na naturalnej płytce",
+    price: 90,
+  },
+  {
+    name: "Uzupełnienie żelu (do 4 tygodni)",
+    price: 90,
+  },
+  {
+    name: "Odnowa żelowa (po 4 tygodniach)",
+    price: 100,
+  },
+  {
+    name: "Przedłużenie paznokci na formie",
+    price: 110,
+  },
+  {
+    name: "Naprawa paznokcia",
+    price: 10,
+  },
+  {
+    name: "Usunięcie stylizacji po innej stylistce",
+    price: 20,
+  },
+  {
+    name: "Manicure klasyczny bez malowania",
+    price: 30,
+  },
+  {
+    name: "Pedicure hybrydowy",
+    price: 80,
+  },
+  {
+    name: "Pedicure hybrydowy SPA",
+    price: 90,
+  },
+];
 
 export default function Home() {
   return (
@@ -67,17 +109,27 @@ export default function Home() {
       <div className="container mx-auto mb-20">
         <div className="flex flex-row">
           <div className="hidden lg:block w-1/6"></div>
-          <div className="flex-col w-full px-4 md:px-4">
-            <Row name="Manicure hybrydowy" price="70" />
-            <Row name="Manicure żelowy na naturalnej płytce" price="90" />
-            <Row name="Uzupełnienie żelu (do 4 tygodni)" price="90" />
-            <Row name="Odnowa żelowa (po 4 tygodniach)" price="100" />
-            <Row name="Przedłużenie paznokci na formie" price="110" />
-            <Row name="Naprawa paznokcia" price="10" />
-            <Row name="Usunięcie stylizacji po innej stylistce" price="20" />
-            <Row name="Manicure klasyczny bez malowania	" price="30" />
-            <Row name="Pedicure hybrydowy	" price="80" />
-            <Row name="Pedicure hybrydowy SPA	" price="90" />
+          <div className="w-full px-4 md:px-4">
+            <table className="w-full">
+              <thead>
+                <tr>
+                  <th className="text-left pl-4 pb-4">Usługi</th>
+                  <th className="text-right pr-4 pb-4">Ceny</th>
+                </tr>
+              </thead>
+              <tbody className="mt-8">
+                {services.map((service) => (
+                  <tr className="bg-gray-200 px-4 py-2 odd:bg-gray-100 cursor-default">
+                    <td className="px-4 py-2 overflow-clip overflow-hidden break-words">
+                      {service.name}
+                    </td>
+                    <td className="px-4 py-2 text-right font-medium">
+                      {service.price} zł
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
           <div className="hidden lg:block w-1/6"></div>
         </div>
