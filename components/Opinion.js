@@ -8,11 +8,11 @@ export const Opinion = ({ date, description, name }) => (
     <p className="my-2 font-extralight">{description}</p>
     <div className="flex flex-row justify-between items-end">
       <div className="flex flex-row">
-        <Image src={star} />
-        <Image src={star} />
-        <Image src={star} />
-        <Image src={star} />
-        <Image src={star} />
+        <Image src={star} alt="star" />
+        <Image src={star} alt="star" />
+        <Image src={star} alt="star" />
+        <Image src={star} alt="star" />
+        <Image src={star} alt="star" />
       </div>
       <p className="text-right">{name}</p>
     </div>

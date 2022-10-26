@@ -102,9 +102,9 @@ export default function Home() {
           Wizytę można zarezerwować za pośrednictwem rozmowy telefonicznej lub
           SMS, kontaktu mailowego, wiadomości na Instagramie lub Messengerze.
           Więcej informacji znajdziesz w zakładce{" "}
-          <a className="underline font-bold">
-            <Link href="/kontakt">kontakt</Link>
-          </a>
+          <Link href="/kontakt">
+            <span className="underline font-bold">kontakt</span>
+          </Link>
           .
         </p>
       </div>

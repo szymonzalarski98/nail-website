@@ -9,7 +9,7 @@ export const AboutMe = () => (
           <img
             className="rounded-full"
             src="https://firebasestorage.googleapis.com/v0/b/wgrzywa-33d36.appspot.com/o/wiki_avatar_circle_jpg.jpeg?alt=media&token=6eeaa0a9-c834-4a13-9f8b-e5541e8e31ac"
-            alt=""
+            alt="avatar"
           />
         </div>
         <div className="md:w-1/3 px-4 md:mb-0 flex items-center">
@@ -21,9 +21,9 @@ export const AboutMe = () => (
             Ponadto oferuję pedicure hybrydowy, pedicure hybrydowy SPA oraz inne
             usługi. Zapraszam do skorzystania z moich usług, wszystkie
             wymienione są w{" "}
-            <a className="underline font-bold">
-              <Link href="/cennik">cenniku</Link>
-            </a>
+            <Link href="/cennik">
+              <span className="underline font-bold">cenniku</span>
+            </Link>
             .
           </p>
         </div>

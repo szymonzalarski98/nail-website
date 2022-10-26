@@ -119,7 +119,10 @@ export default function Home() {
               </thead>
               <tbody className="mt-8">
                 {services.map((service) => (
-                  <tr className="bg-gray-200 px-4 py-2 odd:bg-gray-100 cursor-default">
+                  <tr
+                    key={`${service.name}${service.price}`}
+                    className="bg-gray-200 px-4 py-2 odd:bg-gray-100 cursor-default"
+                  >
                     <td className="px-4 py-2 overflow-clip overflow-hidden break-words">
                       {service.name}
                     </td>
