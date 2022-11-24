@@ -5,6 +5,7 @@ import Link from "next/link";
 import { NextSeo } from "next-seo";
 import { Opinions } from "../components/Opinions";
 import { AboutMe } from "../components/AboutMe";
+import Script from "next/script";
 
 const style = {
   backgroundImage:
@@ -22,12 +23,16 @@ export default function Home() {
       <Head>
         <title>Wiktoria Grzywa</title>
         <link rel="icon" href="/favicon.ico" />
+        <Script
+          type="text/javascript"
+          src="https://booksy.com/widget/code.js?id=166934&country=pl&lang=pl"
+        />
         {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
+        <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         />
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
