@@ -4,7 +4,7 @@ import { Navbar } from "../components/Navbar";
 import TagManager from "react-gtm-module";
 
 function MyApp({ Component, pageProps }) {
-  const gtmId = "GTM-K6J97XJ";
+  const gtmId = "G-HQP509F9Q0";
   useEffect(() => {
     TagManager.initialize({ gtmId });
   }, []);
@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <Component {...pageProps} />
     </div>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

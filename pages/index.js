@@ -27,23 +27,6 @@ export default function Home() {
           type="text/javascript"
           src="https://booksy.com/widget/code.js?id=166934&country=pl&lang=pl"
         />
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <Script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-        />
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
       </Head>
       <NextSeo
         title="Wiktoria Grzywa Stylizacja Paznokci"
